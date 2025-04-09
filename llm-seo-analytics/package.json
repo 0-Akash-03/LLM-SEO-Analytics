@@ -2,12 +2,14 @@
   "name": "llm-seo-analytics",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://<your-github-username>.github.io/llm-seo-analytics",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run lint && npm run build"
+    "export": "next export",
+    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -6,6 +6,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/llm-seo-analytics',
+  assetPrefix: '/llm-seo-analytics/',
 };
 
 module.exports = nextConfig; 
